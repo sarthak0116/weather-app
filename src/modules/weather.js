@@ -9,8 +9,10 @@ export async function getWeather(city = 'london') {
 
     const URL = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${key}`;
 
-    const response = fetch(URL);
-    const data = (await response).json();
+    const response = await fetch(URL);
+    const data = await response.json();
+    console.log(data);
+
     setCache(cacheKey, data);
     return data;
 }
