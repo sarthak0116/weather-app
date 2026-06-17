@@ -1,0 +1,38 @@
+{
+    "name": "web-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve",
+        "build": "webpack --mode production",
+        "lint": "eslint src/",
+        "lint:fix": "eslint src/ --fix",
+        "format": "prettier --write src/",
+        "format:check": "prettier --check src/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sarthak0116/web-template.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/sarthak0116/web-template/issues"
+    },
+    "homepage": "https://github.com/sarthak0116/web-template#readme",
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "css-loader": "^7.1.4",
+        "eslint": "^10.5.0",
+        "eslint-config-prettier": "^10.1.8",
+        "html-webpack-plugin": "^5.6.7",
+        "prettier": "^3.8.4",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.107.2",
+        "webpack-cli": "^7.0.3",
+        "webpack-dev-server": "^5.2.5"
+    }
+}
