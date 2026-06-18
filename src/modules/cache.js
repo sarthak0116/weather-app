@@ -1,4 +1,4 @@
-const TTL = 30 * 60 * 1000; // 15 minutes
+const TTL = 30 * 60 * 1000;
 
 export function getCache(key) {
     try {

@@ -6,6 +6,102 @@
         <title>Weather</title>
     </head>
     <body>
-        
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="./videos/clear-day.mp4" type="video/mp4" />
+        </video>
+
+        <main class="main-container">
+            <div class="left">
+                <header class="main-header">
+                    <a href="#" class="logo-link"
+                        ><h1 class="logo">the.weather</h1></a
+                    >
+                </header>
+
+                <div class="hero-weather-display">
+                    <h2 class="hero-temp">24°</h2>
+                    <div class="hero-meta">
+                        <h3 class="hero-city">London</h3>
+                        <div class="hero-datetime">
+                            <span class="hero-time" id="current-time"
+                                >12:00</span
+                            >
+                            <span class="hero-divider">-</span>
+                            <span class="hero-date" id="current-date"
+                                >Thursday, 18 Jun</span
+                            >
+                        </div>
+                    </div>
+                    <p class="hero-condition">Clear Day</p>
+                </div>
+            </div>
+
+            <div class="right">
+                <form class="search-form">
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Another Location"
+                    />
+                    <button
+                        type="submit"
+                        class="search-btn"
+                        aria-label="Search"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#fff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="search-icon"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="weather-details-container">
+                    <h2 class="details-heading">Weather Details</h2>
+                    <ul class="details-list">
+                        <li class="details-item">
+                            <span class="details-label">Cloudy</span>
+                            <span class="details-value" id="val-cloudy"
+                                >--%</span
+                            >
+                        </li>
+                        <li class="details-item">
+                            <span class="details-label">Humidity</span>
+                            <span class="details-value" id="val-humidity"
+                                >--%</span
+                            >
+                        </li>
+                        <li class="details-item">
+                            <span class="details-label">Wind</span>
+                            <span class="details-value" id="val-wind"
+                                >-- km/h</span
+                            >
+                        </li>
+                        <li class="details-item">
+                            <span class="details-label">Rain</span>
+                            <span class="details-value" id="val-rain"
+                                >-- mm</span
+                            >
+                        </li>
+                        <li class="details-item">
+                            <span class="details-label">Visibility</span>
+                            <span class="details-value" id="val-visibility"
+                                >-- km</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

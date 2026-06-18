@@ -1,0 +1,17 @@
+export const iconToVideo = {
+    'clear-day': 'clear-day.mp4',
+    'clear-night': 'clear-night.mp4',
+    'partly-cloudy-day': 'partly-cloudy-day.mp4',
+    'partly-cloudy-night': 'partly-cloudy-night.mp4',
+    cloudy: 'cloudy.mp4',
+    rain: 'rain.mp4',
+    'showers-day': 'rain.mp4',
+    'showers-night': 'rain.mp4',
+    'thunder-rain': 'rain.mp4',
+    'thunder-showers-day': 'rain.mp4',
+    'thunder-showers-night': 'rain.mp4',
+    snow: 'snow.mp4',
+    sleet: 'sleet.mp4',
+    wind: 'wind.mp4',
+    fog: 'fog.mp4',
+};
